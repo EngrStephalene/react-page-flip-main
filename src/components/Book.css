@@ -1,0 +1,12 @@
+.demoPage {
+    padding: 40px; /* Adds space inside the page */
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Optional: adds a clean background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

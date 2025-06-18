@@ -1,0 +1,21 @@
+.location-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 1000px;
+    overflow: hidden;
+  }
+  
+  .location-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+.location-bg:hover {
+    transform: scale(1.55); /* Scales the image to 105% on hover */
+  }

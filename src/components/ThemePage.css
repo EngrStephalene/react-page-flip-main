@@ -1,0 +1,16 @@
+.theme-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 700px;
+    overflow: hidden;
+  }
+  
+  .motif-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
