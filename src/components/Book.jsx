@@ -12,6 +12,7 @@ import ThemePage from './ThemePage';
 import LocationPage from './LocationPage';
 import EntouragePage1 from './EntouragePage1';
 import EntouragePage2 from './EntouragePage2';
+import EntouragePage4 from './EntouragePage4';
 
 // Page component with forwardRef correctly set up
 const Page = forwardRef(({ number, children }, ref) => (
@@ -59,7 +60,12 @@ function Book() {
       <Page number={9}>
         <EntouragePage2/>
       </Page>
-      <Page number={10}></Page>
+      <Page number={10}>
+        <EntouragePage4/>
+      </Page>
+      <Page number={11}>
+        
+      </Page>
     </HTMLFlipBook>
   );
 }

@@ -1,0 +1,38 @@
+.entourage-secondary {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+    color: #000;
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 36px;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .subhead {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  
+  .secondary-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 10px auto;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
