@@ -1,0 +1,37 @@
+.entourage-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f5;
+  color: #3a3a3a;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #b45f06;
+}
+
+.single-name {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.single-column {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.single-column li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
