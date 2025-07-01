@@ -1,10 +1,16 @@
 .entourage-page {
-  padding: 2rem;
+  padding: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../../images/Entouragebackground.jpg'); /* path relative to the public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #fff8f5;
   color: #3a3a3a;
   max-width: 800px;
   margin: 0 auto;
+  min-height: 80vh; /* Ensure it covers full height */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional for nicer visual */
 }
 
 .section {

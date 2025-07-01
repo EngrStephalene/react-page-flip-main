@@ -1,4 +1,5 @@
 import React from 'react';
+import './EntouragePage4.css';
 
 const EntouragePage4 = () => {
   return (
@@ -6,7 +7,7 @@ const EntouragePage4 = () => {
       <div className="section">
         <h2 className="subtitle">Best Man</h2>
         <p className="single-name">Alexander Roque Tan</p>
-
+      
         <h2 className="subtitle">Maid of Honor</h2>
         <p className="single-name">Loucil Ursula Aranas</p>
       </div>
