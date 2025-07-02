@@ -1,7 +1,7 @@
 .coverPage {
-  position: relative;
+  position: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   text-align: center;
   padding: 40px 20px;
   box-sizing: border-box;
@@ -15,14 +15,14 @@
   overflow: hidden;
   background-image: url('images/Entouragebackground.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
 }
 
 .cover-bg {
   width: 100%;
   max-width: 600px;
-  height: auto;
+  height: 100%;
   margin-bottom: 30px;
   border-radius: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
