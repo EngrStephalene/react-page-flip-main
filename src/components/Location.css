@@ -1,21 +1,40 @@
 .location-page {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 1000px;
-    overflow: hidden;
-  }
-  
-  .location-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Hover effect */
-.location-bg:hover {
-    transform: scale(1.55); /* Scales the image to 105% on hover */
-  }
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/images/Entouragebackground.webp'); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.85); /* Slight white background for contrast */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 750px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.location-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}

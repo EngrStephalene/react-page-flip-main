@@ -1,10 +1,14 @@
 .entourage-page1 {
   padding: 40px;
   font-family: 'Georgia', serif;
-  background-color: #fff;
+  background-image: url('/images/Entouragebackground.webp'); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .title {
@@ -17,7 +21,7 @@
 }
 
 .subtitle {
-  font-size: 25x;
+  font-size: 25px; /* Fixed typo: was '25x' */
   margin-bottom: 20px;
   text-align: center;
   font-weight: 600;
@@ -62,6 +66,3 @@
   font-size: 18px;
   margin-bottom: 8px;
 }
-
-
-  

@@ -1,30 +1,43 @@
 .coverPage {
-    position: relative;
-    width: 100%;
-    min-height: 100%; /* Fill full viewport height */
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: 'Georgia', serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
-    background-image: url('images/background.jpg');
-    background-size: cover;          /* Fill the div */
-    background-repeat: no-repeat;    /* Prevent tiling */
-    background-position: center;     /* Center the image */
-  }
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  background-image: url('images/Entouragebackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .cover-bg {
-    display: block;
-    width: 100%; /* Resize image smaller */
-    max-width: 600px;
-    height: auto;
-    margin: 20px auto 20px auto; /* Top/Bottom spacing, horizontal centering */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  } 
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.cover-text {
+  max-width: 800px;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffd700;
+}
+
