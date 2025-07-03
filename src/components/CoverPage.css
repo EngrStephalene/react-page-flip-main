@@ -5,7 +5,6 @@
   text-align: center;
   padding: 40px 20px;
   box-sizing: border-box;
-  font-family: 'Georgia', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +12,6 @@
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  background-image: url('images/Entouragebackground.jpg');
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
@@ -38,6 +36,7 @@
   margin-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ffd700;
+  color: black;
+  font-family: 'Baskerville Old Face', serif;
 }
 
