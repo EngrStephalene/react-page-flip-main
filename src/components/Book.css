@@ -9,8 +9,9 @@
     justify-content: center;
     align-items: center;
   }
+  
 
-  .Alex {
+  /* .Alex {
     max-width: 700px;
     height: 100%; 
     margin: 0 auto;
@@ -18,8 +19,8 @@
     font-family: 'Georgia', serif;
     color: #000;
     text-align: center;
-    background-image: url('/images/Entouragebackground.webp'); /* Update path as needed */
+    background-image: url('/images/Entouragebackground.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
+  } */

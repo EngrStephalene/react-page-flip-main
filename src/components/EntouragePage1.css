@@ -1,5 +1,5 @@
 .entourage-page1 {
-  padding: 40px;
+  /* padding: 40px;
   font-family: 'Georgia', serif;
   background-size: cover;
   background-position: center;
@@ -7,7 +7,19 @@
   color: #333;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 100vh; */
+  max-width: 700px;
+  max-height: 910px !important;
+  height: 100%; 
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+  color: #000;
+  text-align: center;
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -19,12 +31,13 @@
   font-family: 'Brush Script MT', cursive;
 }
 
-.subtitle {
-  font-size: 25px; /* Fixed typo: was '25x' */
+.subtitle-first-page {
+  font-size: 25px;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
+  color: #b45f06;
 }
 
 .section {

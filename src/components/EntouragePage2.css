@@ -1,5 +1,5 @@
-.entourage-secondary {
-  max-width: 700px;
+.entourage-page2 {
+  /* max-width: 700px;
   margin: 0 auto;
   padding: 40px 20px;
   font-family: 'Georgia', serif;
@@ -7,7 +7,19 @@
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100vh; */
+  max-width: 700px;
+  min-height: 870px;
+  height: 100%; 
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+  color: #000;
+  text-align: center;
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-title {
@@ -21,6 +33,7 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #b45f06;
 }
 
 .subhead {

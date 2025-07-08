@@ -9,7 +9,7 @@ const EntouragePage1 = () => {
       </div>
 
       <div className="section">
-        <h2 className="subtitle">Principal Sponsors</h2>
+        <h2 className="subtitle-first-page">Principal Sponsors</h2>
         <div className="sponsor-columns">
           <ul>
             <li>Michelle Decipulo</li>

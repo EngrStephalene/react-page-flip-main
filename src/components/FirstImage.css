@@ -1,8 +1,9 @@
 /* Container styles */
 .firstImage {
-  position: relative;
+  /* position: relative; */
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  max-width: 700px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -14,10 +15,11 @@
 /* Background image styling */
 .firstImage-bg {
   position: absolute;
+  padding: 40px 20px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
   z-index: 1;
 }
@@ -29,19 +31,23 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-  z-index: 2;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8));
+  z-index: 1;
 }
 
-/* Text overlay */
-.overlay-text {
-  position: relative;
+ Text overlay
+ .overlay-text {
+  position: absolute;
+  bottom: 40px; /* Distance from the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 3;
   text-align: center;
   animation: fadeIn 2s ease-in-out;
   padding: 0 20px;
 }
+
 
 .overlay-text h1 {
   font-size: 3rem;

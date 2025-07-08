@@ -5,15 +5,15 @@ const EntouragePage4 = () => {
   return (
     <div className="entourage-page">
       <div className="section">
-        <h2 className="subtitle">Best Man</h2>
+        <h2 className="subtitle-fourth-page">Best Man</h2>
         <p className="single-name">Alexander Roque Tan</p>
       
-        <h2 className="subtitle">Maid of Honor</h2>
+        <h2 className="subtitle-fourth-page">Maid of Honor</h2>
         <p className="single-name">Loucil Ursula Aranas</p>
       </div>
 
       <div className="section">
-        <h2 className="subtitle">Groomsmen</h2>
+        <h2 className="subtitle-fourth-page">Groomsmen</h2>
         <ul className="single-column">
           <li>Ace Del Rosario</li>
           <li>Vince Gonzales</li>
@@ -23,7 +23,7 @@ const EntouragePage4 = () => {
       </div>
 
       <div className="section">
-        <h2 className="subtitle">Bridesmaids</h2>
+        <h2 className="subtitle-fourth-page">Bridesmaids</h2>
         <ul className="single-column">
           <li>Ren Nicolai Nacional</li>
           <li>Regilah Vilisette Fabro</li>
@@ -33,7 +33,7 @@ const EntouragePage4 = () => {
       </div>
 
       <div className="section">
-        <h2 className="subtitle">Junior Bridesmaids</h2>
+        <h2 className="subtitle-fourth-page">Junior Bridesmaids</h2>
         <ul className="single-column">
           <li>Isabela Filomena Aranas</li>
           <li>Arwa Hussien</li>

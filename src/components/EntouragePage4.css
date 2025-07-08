@@ -1,10 +1,16 @@
 .entourage-page {
-  padding: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #3a3a3a;
-  max-width: 800px;
+  max-width: 700px;
+  max-height: 910px !important;
+  height: 100%; 
   margin: 0 auto;
-  min-height: 80vh; /* Ensure it covers full height */
+  padding: 40px 20px;
+  font-family: 'Georgia', serif;
+  color: #000;
+  text-align: center;
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .section {
@@ -12,7 +18,7 @@
   padding-bottom: 1rem;
 }
 
-.subtitle {
+.subtitle-fourth-page {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;

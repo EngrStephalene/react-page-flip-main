@@ -10,7 +10,6 @@ const FirstImage = () => {
         alt="Wedding Image1" 
         className="firstImage-bg" 
       />
-      
       <div className="overlay-text">
         <h1>We joyfully invite you to our wedding day on</h1>
         <h2>August 23, 2025 · The Barn at Mango Ranch</h2>

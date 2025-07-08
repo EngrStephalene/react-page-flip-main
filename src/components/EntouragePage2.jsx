@@ -3,9 +3,8 @@ import './EntouragePage2.css';
 
 const EntouragePage2 = () => {
   return (
-    <div className="entourage-secondary">
+    <div className="entourage-page2">
       <h2 className="section-title">Secondary Sponsors</h2>
-
       <div className="secondary-group">
         <h3 className="subhead">Candle</h3>
         <ul>
