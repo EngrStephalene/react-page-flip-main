@@ -10,6 +10,12 @@
   justify-content: center;
   padding: 40px 20px;
   box-sizing: border-box;
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 690px;
+  max-width: 700px;
 }
 
 /* .overlay {

@@ -1,13 +1,38 @@
+.ourStory{
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 690px;
+  max-width: 700px;
+  justify-content: center;
+  text-align: center;
+}
+
+.ourStoryVid{
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 690px;
+  max-width: 700px;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+
+}
+
 .our-story-container {
     text-align: center;
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
     transition: all 0.5s ease-in-out;
-    max-width: 600px;
+    max-width: 500px;
   }
   
   .title {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    padding-top: 90px;
     color: #333;
   }
   
@@ -17,19 +42,22 @@
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease-in-out;
+    /* margin-top: 20%;  */
   }
   
   .story-video {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
-    display: block;
+    justify-content: center;
+    align-items: center;
   }
   
   .our-story-container.expanded {
     max-width: 100%;
     padding: 1rem;
+    
   }
   
   .our-story-container.expanded .story-video {
@@ -49,4 +77,6 @@
     cursor: pointer;
     z-index: 1;
   }
+
+
   

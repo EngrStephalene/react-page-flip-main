@@ -25,7 +25,6 @@ const EntouragePage1 = () => {
             <li>Rojan Vergara</li>
             <li>Ophelia Rizon</li>
             <li>Ayne Aranas-Hussien</li>
-            <li>Francis Rublico - Kanashiro</li>
           </ul>
           <ul>
             <li>Johny Decipulo</li>
@@ -39,6 +38,7 @@ const EntouragePage1 = () => {
             <li>Rosalie Vergara</li>
             <li>Eid Hussien</li>
             <li>Ayesa Buen Iona Aranas - Rublico</li>
+            <li>Francis Rublico - Kanashiro</li>
           </ul>
         </div>
       </div>

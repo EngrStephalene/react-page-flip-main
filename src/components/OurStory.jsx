@@ -1,9 +1,10 @@
 import React from 'react'
+import './OurStory.css'
 
 const OurStory = () => {
   return (
-    <div>
-        <h1>OurStory</h1>
+    <div className='ourStory'>
+        <h1 className='title'>OurStory</h1>
     </div>
   )
 }

@@ -11,7 +11,10 @@ body,
 html {
   height: 100dvh;
   width: 100dvw;
-  background: #0e1a26;
+  background-image: url('./images/try3.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   display: flex;
   justify-content: center;

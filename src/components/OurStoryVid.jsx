@@ -30,6 +30,8 @@ const OurStoryVid = () => {
   }, []);
 
   return (
+    <div className="ourStoryVid">
+      <h1 className='title'>The Proposal</h1>
     <div className={`our-story-container ${isPlaying ? 'expanded' : ''}`}>
       {/* <h1 className="title">Our Story</h1> */}
       <div className="video-wrapper">
@@ -43,6 +45,8 @@ const OurStoryVid = () => {
         />
       </div>
     </div>
+    </div>
+
   );
 };
 

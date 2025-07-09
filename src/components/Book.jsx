@@ -12,6 +12,7 @@ import ThemePage from './ThemePage';
 import LocationPage from './LocationPage';
 import EntouragePage1 from './EntouragePage1';
 import EntouragePage2 from './EntouragePage2';
+import EntouragePage3 from './EntouragePage3';
 import EntouragePage4 from './EntouragePage4';
 import background from '../../images/background.jpg'
 
@@ -19,7 +20,7 @@ import background from '../../images/background.jpg'
 const Page = forwardRef(({ number, children }, ref) => (
   <div className="demoPage" ref={ref}>
     {/* <h1>R&I</h1> */}
-    <div className='Alex'>
+    <div className='Alex' style={{ pointerEvents: "auto", zIndex: 10 }}>
     <p>{children}</p>
     </div>
     {/* <p>Page number: {number}</p> */}
@@ -29,12 +30,12 @@ const Page = forwardRef(({ number, children }, ref) => (
 function Book() {
   return (
       <HTMLFlipBook
-        width={800}
-        height={1000}
+        width={500}
+        height={710}
         maxShadowOpacity={0.5}
         drawShadow={true}
         showCover={true}
-        size="fixed"
+        // size="fixed"
       >
         <Page number={1}>
           <CoverPage/>
@@ -67,7 +68,6 @@ function Book() {
           <EntouragePage4/>
         </Page>
         <Page number={11}>
-          
         </Page>
       </HTMLFlipBook>
   );

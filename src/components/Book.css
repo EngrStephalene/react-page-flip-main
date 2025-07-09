@@ -1,5 +1,5 @@
 .demoPage {
-    padding: 40px; /* Adds space inside the page */
+    padding: 10px; /* Adds space inside the page */
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -24,3 +24,5 @@
     background-position: center;
     background-repeat: no-repeat;
   } */
+
+  

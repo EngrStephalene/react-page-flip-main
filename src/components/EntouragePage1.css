@@ -9,7 +9,7 @@
   margin: 0 auto;
   min-height: 100vh; */
   max-width: 700px;
-  max-height: 910px !important;
+  max-height: 690px !important;
   height: 100%; 
   margin: 0 auto;
   padding: 40px 20px;
@@ -24,11 +24,11 @@
 
 .title {
   text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Brush Script MT', cursive;
   font-size: 80px;
   font-weight: 500;
   letter-spacing: 2px;
-  margin-bottom: 10px;
-  font-family: 'Brush Script MT', cursive;
 }
 
 .subtitle-first-page {
@@ -47,7 +47,7 @@
 .sponsor-columns {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 20px;
 }
 
 .sponsor-columns ul {
@@ -57,13 +57,13 @@
 }
 
 .sponsor-columns li {
-  font-size: 18px;
+  font-size: 13.5px;
   margin-bottom: 10px;
 }
 
 .single-name {
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
 }
 

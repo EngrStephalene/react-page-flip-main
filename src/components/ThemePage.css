@@ -1,5 +1,5 @@
 .theme-page {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -8,13 +8,22 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 690px;
+  max-width: 700px;
 }
 
 .theme-title {
-  font-size: 2.5rem;
-  font-family: 'Baskerville Old Face', serif;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 2px;
   color: black;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .motif-container {

@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   min-height: 100vh; */
   max-width: 700px;
-  min-height: 870px;
+  max-height: 690px !important;
   height: 100%; 
   margin: 0 auto;
   padding: 40px 20px;
@@ -25,29 +25,29 @@
 .main-title {
   font-size: 36px;
   font-family: 'Brush Script MT', cursive;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .section-title {
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #b45f06;
 }
 
 .subhead {
   font-size: 16px;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 6px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
   text-transform: uppercase;
 }
 
 .secondary-group ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 15px auto;
   font-size: 14px;
   line-height: 1.6;
 }
