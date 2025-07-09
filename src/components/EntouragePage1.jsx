@@ -8,6 +8,20 @@ const EntouragePage1 = () => {
         <h1 className="title">Entourage</h1>
       </div>
 
+      <div className="ourparents">
+        <h2 className="subtitle-first-page">Our Parents</h2>
+        <div className="sponsor-columns">
+        <ul>
+          <li>Yolanie Nacional</li>
+          <li>Marlon Nacional</li>
+        </ul>
+        <ul>
+          <li>Aaron Nino Aranas</li>
+          <li>Rosel Osabel</li>
+        </ul>
+        </div>
+      </div>
+
       <div className="section">
         <h2 className="subtitle-first-page">Principal Sponsors</h2>
         <div className="sponsor-columns">
