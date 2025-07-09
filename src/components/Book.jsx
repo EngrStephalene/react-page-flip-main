@@ -62,10 +62,10 @@ function Book() {
           <EntouragePage1/>
         </Page>
         <Page number={9}>
-          <EntouragePage2/>
+          <EntouragePage4/>
         </Page>
         <Page number={10}>
-          <EntouragePage4/>
+          <EntouragePage2/>
         </Page>
         <Page number={11}>
         </Page>
