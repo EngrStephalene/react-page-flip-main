@@ -1,10 +1,10 @@
-import React, { forwardRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import HTMLFlipBook from 'react-pageflip';
-import './Entourage'
-import Entourage from './Entourage';
+import './Book.css';
+
 import CoverPage from './CoverPage';
 import FirstImage from './FirstImage';
-import './Book.css';
 import FirstImageDesc from './FirstImageDesc';
 import OurStory from './OurStory';
 import OurStoryVid from './OurStoryVid';
@@ -14,62 +14,90 @@ import EntouragePage1 from './EntouragePage1';
 import EntouragePage2 from './EntouragePage2';
 import EntouragePage3 from './EntouragePage3';
 import EntouragePage4 from './EntouragePage4';
-import background from '../../images/background.jpg'
+import japanVid from '../../images/JAPAN.mp4';
 
-// Page component with forwardRef correctly set up
-const Page = forwardRef(({ number, children }, ref) => (
+const Page = React.forwardRef(({ children }, ref) => (
   <div className="demoPage" ref={ref}>
-    {/* <h1>R&I</h1> */}
-    <div className='Alex' style={{ pointerEvents: "auto", zIndex: 10 }}>
-    <p>{children}</p>
-    </div>
-    {/* <p>Page number: {number}</p> */}
+    <div className="Alex">{children}</div>
   </div>
 ));
 
 function Book() {
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
+  const videoRef = useRef(null);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleResize = () => {
+    setIsMobileView(window.innerWidth < 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const handlePageFlip = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+    setIsExpanded(false);
+    document.body.classList.remove('blur-background');
+  };
+
+  const handlePlay = () => {
+    setIsExpanded(true);
+    document.body.classList.add('blur-background');
+    setTimeout(() => {
+      if (videoRef.current) videoRef.current.play();
+    }, 50);
+  };
+
+  const handleClose = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+    setIsExpanded(false);
+    document.body.classList.remove('blur-background');
+  };
+
+  const overlay = (
+    <div className="video-overlay">
+      <button className="close-button" onClick={handleClose}>✕</button>
+      <video ref={videoRef} className="expanded-video" src={japanVid} controls />
+    </div>
+  );
+
   return (
-      <HTMLFlipBook
-        width={500}
-        height={710}
-        maxShadowOpacity={0.5}
-        drawShadow={true}
-        showCover={true}
-        // size="fixed"
-      >
-        <Page number={1}>
-          <CoverPage/>
-        </Page>
-        <Page number={2}>
-          <FirstImage/>
-        </Page>
-        <Page number={3}>
-          <FirstImageDesc/>
-        </Page>
-        <Page number={4}>
-          <OurStory/>
-        </Page>
-        <Page number={5}>
-          <OurStoryVid/>
-        </Page>
-        <Page number={6}>
-          <ThemePage/>
-        </Page>
-        <Page number={7}>
-          <LocationPage/>
-        </Page>
-        <Page number={8}>
-          <EntouragePage1/>
-        </Page>
-        <Page number={9}>
-          <EntouragePage4/>
-        </Page>
-        <Page number={10}>
-          <EntouragePage2/>
-        </Page>
-        <Page number={11}>
-        </Page>
-      </HTMLFlipBook>
+    <>
+      <div className="book-container">
+        <HTMLFlipBook
+          width={500}
+          height={710}
+          size="fixed"
+          maxShadowOpacity={0.5}
+          showCover={true}
+          mobileScrollSupport={true}
+          pagesPerView={isMobileView ? 1 : 2}
+          onFlip={handlePageFlip}
+        >
+          <Page><CoverPage /></Page>
+          <Page><FirstImage /></Page>
+          <Page><FirstImageDesc /></Page>
+          <Page><OurStory /></Page>
+          <Page><OurStoryVid onPlay={handlePlay} /></Page>
+          <Page><ThemePage /></Page>
+          <Page><LocationPage /></Page>
+          <Page><EntouragePage1 /></Page>
+          <Page><EntouragePage4 /></Page>
+          <Page><EntouragePage2 /></Page>
+          <Page></Page>
+        </HTMLFlipBook>
+      </div>
+
+      {isExpanded && ReactDOM.createPortal(overlay, document.body)}
+    </>
   );
 }
 

@@ -11,7 +11,7 @@ const CoverPage = () => {
         className="cover-bg" 
       />
       <div className="cover-text">
-        <h1 className="main-title">Baroy and Issay</h1>
+        <h1 className="main-title">Baroy & Issay</h1>
       </div>
     </div>
   )

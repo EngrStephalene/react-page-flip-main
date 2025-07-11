@@ -5,7 +5,7 @@ const EntouragePage1 = () => {
   return (
     <div className="entourage-page1">
       <div className="section">
-        <h1 className="title">Entourage</h1>
+        <h1 className="enTitle">Entourage</h1>
       </div>
 
       <div className="ourparents">

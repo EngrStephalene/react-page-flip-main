@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 40px 50px;
   box-sizing: border-box;
   background-image: url('/images/Entouragebackground.webp');
   background-size: cover;
@@ -16,6 +16,7 @@
   background-repeat: no-repeat;
   min-height: 690px;
   max-width: 700px;
+  text-align: center;
 }
 
 /* .overlay {
@@ -39,7 +40,7 @@
 }
 
 .overlay p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -57,4 +58,21 @@
 
 .overlay {
   animation: fadeInUp 4s ease-in-out;
+}
+
+@media (max-width: 376px) {
+
+  .location-page{
+  padding: 10px;
+  }
+
+  .location-img{
+  margin-bottom: 20px;
+  }
+
+  .overlay p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 180px;
+  }
 }

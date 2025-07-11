@@ -22,18 +22,19 @@
   background-repeat: no-repeat;
 }
 
-.title {
+.enTitle {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   font-family: 'Brush Script MT', cursive;
   font-size: 80px;
   font-weight: 500;
   letter-spacing: 2px;
+    color: #333;
 }
 
 .subtitle-first-page {
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
@@ -47,6 +48,7 @@
 .sponsor-columns {
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 20px;
 }
 
@@ -77,4 +79,61 @@
 .single-column li {
   font-size: 18px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 431px){
+  .enTitle{
+    font-size: 69px;
+  }
+
+  .subtitle-first-page{
+    font-size: 20px;
+  }
+
+  .sponsor-columns li{
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .single-name{
+    margin-top: 5px;
+  }
+
+}
+
+@media (max-width: 415px){
+  .enTitle{
+    font-size: 69px;
+  }
+
+  .subtitle-first-page{
+    font-size: 20px;
+  }
+
+  .sponsor-columns li{
+    font-size: 10px;
+    margin-bottom: 9px;
+  }
+  .single-name{
+    margin-top: 5px;
+  }
+
+}
+
+@media (max-width: 376px){
+  .enTitle{
+    font-size: 69px;
+  }
+
+  .subtitle-first-page{
+    font-size: 20px;
+  }
+
+  .sponsor-columns li{
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .single-name{
+    margin-top: 5px;
+  }
+
 }
