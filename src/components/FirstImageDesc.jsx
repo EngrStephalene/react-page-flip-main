@@ -1,8 +1,7 @@
-import './FirstImage.css'
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "react-modal";
-import "./EntouragePage3.css";
+import "./style.css";
 
 Modal.setAppElement("#root");
 
@@ -40,10 +39,10 @@ const FirstImageDesc = () => {
   return (
 
     <div className='pageTwo'>
-      <h2 className='message'>We are thrilled to share our most cherished memories with you. Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!</h2>
+      <h2 className='message'>We are thrilled to share our most cherished memories with you. <br /> Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!</h2>
 
     <div className="rsvp-container">
-  <h2>RSVP Invitation</h2>
+  <h2 className='invText'>RSVP Invitation</h2>
   <button className="open-modal-btn" onClick={openModal}>
     Open RSVP Form
   </button>

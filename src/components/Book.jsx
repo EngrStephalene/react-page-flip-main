@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import HTMLFlipBook from 'react-pageflip';
-import './Book.css';
+import './style.css';
 
 import CoverPage from './CoverPage';
 import FirstImage from './FirstImage';
@@ -92,7 +92,6 @@ function Book() {
           <Page><EntouragePage1 /></Page>
           <Page><EntouragePage4 /></Page>
           <Page><EntouragePage2 /></Page>
-          <Page></Page>
         </HTMLFlipBook>
       </div>
 

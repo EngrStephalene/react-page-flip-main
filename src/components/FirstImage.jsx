@@ -1,6 +1,6 @@
 import React from 'react'
 import firstImage from '../../images/Image1.jpg'
-import './FirstImage.css'
+import './style.css'
 
 const FirstImage = () => {
   return (

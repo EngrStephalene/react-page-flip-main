@@ -1,5 +1,5 @@
 import React from 'react';
-import './EntouragePage2.css';
+import './style.css';
 
 const EntouragePage2 = () => {
   return (

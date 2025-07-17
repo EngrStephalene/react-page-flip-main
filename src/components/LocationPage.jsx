@@ -1,6 +1,6 @@
 import React from 'react'
 import location from '../../images/location-no-bg.png'
-import './Location.css'
+import './style.css'
 
 const LocationPage = () => {
   return (

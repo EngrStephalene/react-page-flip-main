@@ -1,5 +1,5 @@
 import React from 'react';
-import './OurStory.css';
+import './style.css';
 import japanVid from '../../images/JAPAN.mp4';
 
 const OurStoryVid = ({ onPlay }) => {

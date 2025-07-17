@@ -1,6 +1,6 @@
 import React from 'react'
 import motif from '../../images/motif-edited.png'
-import './ThemePage.css'
+import './style.css'
 
 const ThemePage = () => {
   return (
