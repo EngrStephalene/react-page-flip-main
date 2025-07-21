@@ -5,17 +5,14 @@ import './style.css'
 const LocationPage = () => {
   return (
     <div className='location-page'>
-       <div className="overlay">
+      <h1 className="locationTitle">Location</h1>
         <img 
           src={location} 
           alt="Wedding Location" 
           className="location-img" 
         />
-        <p>
-          For your convenience, shuttle services will be available to transport guests from the parking area to the venue. Please refer to the map for designated pick-up points. <br /><br />There are several accommodation options nearby for out-of-town guests. We have arranged special rates with select hotels. Please contact us for more information.
-        </p>
-
-      </div>
+        <h1 className="locationSubTitle">The Barn at Mango Ranch</h1>
+        <h2 className="locationExtraSubTitle">Palinpinon Road, Valencia, Negros Oriental</h2>
     </div>
   )
 }
