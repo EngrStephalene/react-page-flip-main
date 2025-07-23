@@ -7,7 +7,7 @@ const MainPage = () => {
     <div style={{
         height: '100dvh',
         width: '100dvw',
-        backgroundImage: {backgroundGIF},
+        backgroundImage: `url(${backgroundGIF})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
