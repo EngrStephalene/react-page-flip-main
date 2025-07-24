@@ -47,7 +47,7 @@ const FirstImageDesc = () => {
         Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!
       </h2>
 
-      <div className="rsvp-container">
+      {/* <div className="rsvp-container">
         <h2 className="invText">RSVP Invitation</h2>
         <button className="open-modal-btn" onClick={openModal}>
           Open RSVP Form
@@ -120,7 +120,7 @@ const FirstImageDesc = () => {
             Close
           </button>
         </Modal>
-      </div>
+      </div> */}
     </div>
   );
 };

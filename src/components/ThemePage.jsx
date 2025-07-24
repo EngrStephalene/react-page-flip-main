@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
-import attireImage from '../../images/motif-edited.png'; // update with your actual image path
+import attireImage from '../../images/whatToWear-no-bg.png'; // update with your actual image path
+import colorPallet from '../../images/motifNoBG.png'
 
 const ThemePage = () => {
   return (
@@ -10,6 +11,12 @@ const ThemePage = () => {
       <div className="theme-section">
         <h2 className="theme-label">THEME</h2>
         <p className="theme-text">Pastels & Florals</p>
+        
+        <img 
+          src={colorPallet} 
+          alt="Color Palette" 
+          style={{ width: '300px', height: 'auto' }} 
+        />
 
         <h2 className="theme-label">ATTIRE</h2>
         <p className="theme-text">Dressy Casual Attire</p>

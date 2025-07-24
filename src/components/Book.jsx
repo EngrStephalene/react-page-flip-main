@@ -15,6 +15,8 @@ import EntouragePage2 from './EntouragePage2';
 import EntouragePage3 from './EntouragePage3';
 import EntouragePage4 from './EntouragePage4';
 import japanVid from '../../images/JAPAN.mp4';
+import RsvpPage from './RsvpPage';
+import EmptyPage from './EmptyPage';
 
 const Page = React.forwardRef(({ children }, ref) => (
   <div className="demoPage" ref={ref}>
@@ -92,6 +94,8 @@ function Book() {
           <Page><EntouragePage1 /></Page>
           <Page><EntouragePage4 /></Page>
           <Page><EntouragePage2 /></Page>
+          <Page><RsvpPage/></Page>
+          <Page><EmptyPage/></Page>
         </HTMLFlipBook>
       </div>
 
