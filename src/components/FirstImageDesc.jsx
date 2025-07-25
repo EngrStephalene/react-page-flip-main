@@ -42,20 +42,18 @@ const FirstImageDesc = () => {
   };
 
   return (
-    <div className="firstImage">
+    <div className="pageTwo">
       <img 
         src={image4} 
         alt="Image"
-        className="firstImage-bg" 
-        // style={{ width: '300px', height: 'auto' }} 
+        className="ourStory-bg"  
+        style={{ width: '300px', height: 'auto' }} 
       />
-    <div>
-      <h3>
+      <h2 className="message">
         We are thrilled to share our most cherished memories with you. <br />
         Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!
-      </h3>
-    </div>
-    
+      </h2>
+
       {/* <div className="rsvp-container">
         <h2 className="invText">RSVP Invitation</h2>
         <button className="open-modal-btn" onClick={openModal}>
