@@ -16,7 +16,8 @@ import EntouragePage3 from './EntouragePage3';
 import EntouragePage4 from './EntouragePage4';
 import japanVid from '../../images/JAPAN.mp4';
 import RsvpPage from './RsvpPage';
-import EmptyPage from './EmptyPage';
+import LastPage from './LastPage';
+import TimelinePage from './TimelinePage';
 
 const Page = React.forwardRef(({ children }, ref) => (
   <div className="demoPage" ref={ref}>
@@ -91,11 +92,12 @@ function Book() {
           <Page><OurStoryVid onPlay={handlePlay} /></Page>
           <Page><ThemePage /></Page>
           <Page><LocationPage /></Page>
+          <Page><TimelinePage/></Page>
           <Page><EntouragePage1 /></Page>
           <Page><EntouragePage4 /></Page>
           <Page><EntouragePage2 /></Page>
           <Page><RsvpPage/></Page>
-          <Page><EmptyPage/></Page>
+          <Page><LastPage/></Page>
         </HTMLFlipBook>
       </div>
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "react-modal";
 import "./style.css";
+import image4 from '../../images/image4.jpg'
 
 Modal.setAppElement("#root");
 
@@ -41,12 +42,20 @@ const FirstImageDesc = () => {
   };
 
   return (
-    <div className="pageTwo">
-      <h2 className="message">
+    <div className="firstImage">
+      <img 
+        src={image4} 
+        alt="Image"
+        className="firstImage-bg" 
+        // style={{ width: '300px', height: 'auto' }} 
+      />
+    <div>
+      <h3>
         We are thrilled to share our most cherished memories with you. <br />
         Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!
-      </h2>
-
+      </h3>
+    </div>
+    
       {/* <div className="rsvp-container">
         <h2 className="invText">RSVP Invitation</h2>
         <button className="open-modal-btn" onClick={openModal}>
