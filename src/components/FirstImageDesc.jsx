@@ -41,7 +41,7 @@ const FirstImageDesc = () => {
   };
 
   return (
-    <div>
+    <div className="pageTwo">
       <h2 className="message">
         We are thrilled to share our most cherished memories with you. <br />
         Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!

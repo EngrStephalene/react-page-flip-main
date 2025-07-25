@@ -249,6 +249,7 @@
   background-repeat: no-repeat;
   min-height: 690px;
   max-width: 700px;
+  display: flex;
 }
 
 .enTitle {
