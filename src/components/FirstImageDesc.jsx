@@ -42,13 +42,13 @@ const FirstImageDesc = () => {
   };
 
   return (
-    <div className="pageTwo">
-      <img 
+    <div>
+      {/* <img 
         src={image4} 
         alt="Image"
         className="ourStory-bg"  
         style={{ width: '300px', height: 'auto' }} 
-      />
+      /> */}
       <h2 className="message">
         We are thrilled to share our most cherished memories with you. <br />
         Our journey has been filled with love, laughter, and unforgettable memories. We can't wait to celebrate with you!
