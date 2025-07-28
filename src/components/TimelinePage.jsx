@@ -5,7 +5,7 @@ import timeline from '../../images/timeline.png'
 const TimelinePage = () => {
   return (
     <div className="theme-page-container">
-        <h2 className='theme-script-title'>Timeline</h2>
+        <h2 className='first-title'>Timeline</h2>
         <img 
           src={timeline} 
           alt="timeline" 

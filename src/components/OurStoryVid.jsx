@@ -11,7 +11,6 @@ const OurStoryVid = ({ onPlay }) => {
           className="story-video"
           src={japanVid}
           controls
-          playsInline
           onPlay={onPlay}
         />
       </div>
