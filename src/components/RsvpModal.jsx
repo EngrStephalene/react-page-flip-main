@@ -12,6 +12,7 @@ import {
     FormControl,
     FormLabel
 } from "@mui/material";
+import emailjs from "@emailjs/browser";
 
 const RsvpModal = ({open, onClose}) => {
     const [modalError, setModalError] = useState('');
@@ -21,8 +22,12 @@ const RsvpModal = ({open, onClose}) => {
     const [successMessage, setSuccessMessage] = useState('');
     const [nameError, setNameError] = useState('');
     const [emailError, setEmailError] = useState('');
+    const [attendance, setAttendance] = useState('')
+    const [companion, setCompanion] = useState('')
     const [attendanceError, setAttendanceError] = useState('');
     const [companionError, setCompanionError] = useState('');
+
+    const closeModal = () => onClose
 
     // Focus management: Set focus on the first input field when the dialog is open
     useEffect(() => {
@@ -32,7 +37,21 @@ const RsvpModal = ({open, onClose}) => {
         }
     }, [open]);
 
+    const handleChangeAttendance = (event) => {
+      setAttendance(event.target.value);
+    };
+
+    const handleChangeCompanion = (event) => {
+      setCompanion(event.target.value);
+    };
+
     const sendEmail = () => {
+      console.log("Full Name: " + name)
+      console.log("Email: " + email)
+      console.log("Message: " + message)
+      console.log("Attendance: " + attendance)
+      console.log("Companion: " + companion)
+
       let hasError = false;
     
       if (!name.trim()) {
@@ -74,7 +93,12 @@ const RsvpModal = ({open, onClose}) => {
       };
     
       emailjs
-        .send("your_service_id", "your_template_id", templateParams, "your_public_key")
+        .send(
+          "service_ykwoaln",
+          "template_zxhcpzn",
+          templateParams, 
+          "MPVuoF5L7Dv9ipMq9"
+          )
         .then(() => {
           setSuccessMessage("Thank you! Your RSVP has been sent.");
           setName('');
@@ -175,9 +199,11 @@ const RsvpModal = ({open, onClose}) => {
           aria-labelledby="radio-buttons-group-attendance"
           defaultValue="attendYes"
           name="attendance-group"
+          value={attendance}
+          onChange={handleChangeAttendance}
         >
-          <FormControlLabel value="attendYes" control={<Radio />} label="Yes" />
-          <FormControlLabel value="attendNo" control={<Radio />} label="No" />
+          <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+          <FormControlLabel value="No" control={<Radio />} label="No" />
         </RadioGroup>
       </FormControl>
       <br></br>
@@ -187,9 +213,11 @@ const RsvpModal = ({open, onClose}) => {
           aria-labelledby="radio-buttons-group-companion"
           defaultValue="companionYes"
           name="companion-group"
+          value={companion}
+          onChange={handleChangeCompanion}
         >
-          <FormControlLabel value="companionYes" control={<Radio />} label="Yes" />
-          <FormControlLabel value="companionNo" control={<Radio />} label="No" />
+          <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+          <FormControlLabel value="No" control={<Radio />} label="No" />
         </RadioGroup>
       </FormControl>
       {successMessage && (
@@ -217,7 +245,7 @@ const RsvpModal = ({open, onClose}) => {
           },
         }}
       >
-        Add
+        Submit
       </Button>
       <Button 
         onClick={onClose} 

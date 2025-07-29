@@ -77,7 +77,7 @@ function Book() {
       <div className="book-container">
         <HTMLFlipBook
           width={isMobileView ? 360 : 500}
-          height={isMobileView ? 710 : 710}
+          height={isMobileView ? 750 : 750}
           size="fixed"
           maxShadowOpacity={0.5}
           showCover={true}

@@ -12,7 +12,7 @@ const FirstImage = () => {
       />
       <div className="overlay-text">
         <h1 className='text1'>We joyfully invite you to our wedding day on</h1>
-        <h2>August 23, 2025 · The Barn at Mango Ranch</h2>
+        <h2>August 22, 2025 · The Barn at Mango Ranch</h2>
       </div>
     </div>
   )
