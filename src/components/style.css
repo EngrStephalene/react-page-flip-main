@@ -32,6 +32,12 @@
 
 /* 📱 Mobile-specific adjustments */
 @media (max-width: 768px) {
+  .page-container {
+    min-height: 710px;
+    max-width: 400px;
+    padding: 0.5rem;
+  }
+
   .book-container {
     padding: 0;
   }
@@ -43,13 +49,19 @@
 
 /* 📱 Very small screens (phones) */
 @media (max-width: 500px) {
-  .book-container {
+  .page-container {
+    min-height: 710px;
+    max-width: 400px;
+    padding: 0.5rem;
+  }
+
+  /* .book-container {
     padding: 0;
     width: 100vw;
     max-width: 100vw;
     height: 144vw;
     overflow-x: hidden;
-  }
+  } */
 
   .demoPage {
     padding: 45px;
@@ -59,11 +71,20 @@
 }
 
 @media (max-width: 415px) {
+  .page-container {
+    min-height: 710px;
+    max-width: 400px;
+    padding: 0.5rem;
+  }
+
   .book-container {
     padding: 0;
-    width: 100vw;
+    /* width: 100vw;
     max-width: 100vw;
-    height: 144vw;
+    height: 144vw; */
+    height: 750px;
+    width: 360px;
+    max-width: 360px;
     overflow-x: hidden;
   }
 
@@ -81,6 +102,12 @@
 
 /* 📱 Very small screens (phones) */
 @media (max-width: 376px) {
+  .page-container {
+    min-height: 710px;
+    max-width: 400px;
+    padding: 0.5rem;
+  }
+
   .book-container {
     padding: 0;
     width: 100vw;
@@ -116,7 +143,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 730px;
+  min-height: 728px;
   max-width: 700px;
   /* border: 1px red solid; */
 }
@@ -218,7 +245,9 @@
 
 .entourage-page1 {
   max-width: 700px;
-  max-height: 690px !important;
+  min-height: 728px !important;
+  position: relative;
+  width: 100%;
   height: 100%; 
   margin: 0 auto;
   padding: 40px 20px;
@@ -229,6 +258,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 0px;
 }
 
 .rsvp-page {
@@ -244,25 +274,26 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
   display: flex;
 }
 
 .enTitle {
-  text-align: center;
-  margin-bottom: 5px;
+    text-align: center;
+  /* margin-top: 5px; */
     font-family: "Birthstone", cursive;
     font-weight: 400;
     font-style: bold;
     font-size: 90px;
-  letter-spacing: 2px;
+    letter-spacing: 2px;
     color: #333;
 }
 
 .subtitle-first-page {
   font-size: 25px;
   margin-bottom: 10px;
+  margin-top: 15px;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
@@ -270,14 +301,18 @@
 }
 
 .section {
-  margin-bottom: 50px;
+  margin-bottom: 5px;
+}
+
+.test-steph {
+  font-size: 13.5px;
 }
 
 .sponsor-columns {
   display: flex;
   justify-content: center;
   text-align: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .sponsor-columns ul {
@@ -288,7 +323,7 @@
 
 .sponsor-columns li {
   font-size: 13.5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .single-name {
@@ -367,8 +402,9 @@
 }
 
 .entourage-page2 {
+  position: relative;
   max-width: 700px;
-  max-height: 690px !important;
+  min-height: 728px !important;
   height: 100%; 
   margin: 0 auto;
   padding: 40px 20px;
@@ -385,7 +421,7 @@
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   color: #b45f06;
 }
 
@@ -552,8 +588,10 @@
 
 .entourage-page {
   max-width: 700px;
-  max-height: 690px !important;
+  min-height: 728px !important;
+  position: relative;
   height: 100%; 
+  width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
   font-family: 'Georgia', serif;
@@ -565,10 +603,10 @@
   background-repeat: no-repeat;
 }
 
-.section {
+/* .section {
   margin-bottom: 10px;
-  /* padding-bottom: 1rem; */
-}
+  padding-bottom: 1rem;
+} */
 
 .subtitle-fourth-page {
   font-size: 1.5rem;
@@ -644,7 +682,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
 }
 
@@ -716,7 +754,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
 }
 
@@ -796,7 +834,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
 }
 
@@ -854,7 +892,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
   justify-content: center;
   text-align: center;
@@ -876,7 +914,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
   display: flex;
   flex-direction: column;
@@ -1127,7 +1165,7 @@
 
 }
 
-.theme-page-container {
+.page-container {
   height: 100%;
   width: 100%;
   padding: 1rem;
@@ -1145,13 +1183,38 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 690px;
+  min-height: 728px;
   max-width: 700px;
 }
 
+.page-container {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: url('/images/Entouragebackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 728px;
+  max-width: 700px;
+}
+
+/* .section-timeline {
+  padding-top: 50px;
+} */
+
 /* ✅ Mobile view: match flipbook size */
 @media (max-width: 768px) {
-  .theme-page-container {
+  .page-container {
     min-height: 710px;
     max-width: 400px;
     padding: 0.5rem;
