@@ -4,10 +4,8 @@ import timeline from '../../images/timeline.png'
 
 const TimelinePage = () => {
   return (
-    <div className="page-container">
-        <div className='section-timeline'>
-          <h2 className='enTitle'>Timeline</h2>
-        </div>
+    <div className="theme-page-container">
+        <h2 className='first-title'>Timeline</h2>
         <img 
           src={timeline} 
           alt="timeline" 

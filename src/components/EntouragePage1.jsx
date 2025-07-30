@@ -59,11 +59,11 @@ const EntouragePage1 = () => {
             <li>Gina S. Beloy</li>
           </ul>
         </div>
-        <div className='test-steph'>
-          <p >Jane Aranas</p>
+        <div>
+          <p>Jane Aranas</p>
           <p>Clint Aranas</p>
           <p>Ophelia Sidro</p>
-        </div>
+          </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import './style.css'
 
 const LocationPage = () => {
   return (
-    <div className='page-container'>
+    <div className='location-page'>
       <h1 className="locationTitle">Location</h1>
         <img 
           src={location} 

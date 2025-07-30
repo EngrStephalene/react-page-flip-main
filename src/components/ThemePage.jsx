@@ -5,7 +5,7 @@ import colorPallet from '../../images/motifNoBG.png'
 
 const ThemePage = () => {
   return (
-    <div className="page-container">
+    <div className="theme-page-container">
       <h1 className="theme-script-title">Details</h1>
 
       <div className="theme-section">
